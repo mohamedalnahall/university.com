@@ -1,0 +1,134 @@
+body[data-theme="light"] {
+    --black : black;
+    --dark : #1d1d1f;
+    --light-dark : rgb(87, 87, 87);
+    --lighter-dark : #86868b;
+    --hover : #f2f5f8;
+    --gray : #c4cccf;
+    --blue : #0071e3;
+    --dark-blue :#006ad4;
+    --darker-blue : #0057ae;
+    --light-blue : #72b1ef;
+    --light : rgb(210, 210, 215);
+    --white : white;
+    --background : #f1f4f6;
+    --shadow : rgba(125, 125, 150, 0.15);
+    --light-shadow : rgb(125 125 150 / 2%);
+    --input-shadow : rgb(0 125 250 / 60%);
+    --disable : rgba(0, 0, 0, 0.4);
+    --trans-1 : 150ms;
+}
+
+body[data-theme="dark"] {
+    --black : rgb(245, 242, 255);
+    --dark : #e0e0e7;
+    --light-dark : #c2c2c7;
+    --lighter-dark : #a2a2a7;
+    --hover : #14161d;
+    --gray : #a2a2a7;
+    --blue : #0071e3;
+    --dark-blue :#006ad4;
+    --darker-blue : #0057ae;
+    --light-blue : #72b1ef;
+    /* --blue : #26c6da;
+    --dark-blue :#23b2c5;
+    --darker-blue : #20a5b7;
+    --light-blue : #8ce1eb;*/
+    --light : #3c424c;
+    --white : #090a0c;
+    --background : #111316;
+    --shadow : rgba(0, 0, 0, 0.02);
+    --light-shadow : rgba(0, 0, 0, 0.02);
+    --input-shadow : rgb(0 125 250 / 60%);
+    --disable : rgba(0, 0, 0, 0.5);
+    --trans-1 : 150ms;
+}
+
+* {
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+    color: var(--light-dark); 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:var(--background);
+}
+
+hr{
+    border-color: var(--light); 
+    border-top: 1px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:var(--dark);
+}
+
+h1{
+    margin: 1.3125rem 0;
+}
+
+h2{
+    margin: 1.245rem 0;
+}
+
+h3 {
+    margin: 1rem 0;
+}
+
+li{
+    list-style: none;
+}
+
+input{
+    background-color: var(--white);
+    color: var(--dark);
+    border: 0.0625rem solid var(--light);
+    padding: 1rem;
+    font-size: 1rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+    border-radius: 0.625rem;
+}
+
+input[type=text]:focus,input[type=password]:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 0.25rem var(--input-shadow);
+    outline: none;
+}
+
+input[type=submit] {
+    background-color: var(--blue);
+    color: var(--white);
+    margin-top: 1rem;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--dark-blue);
+}
+
+input[type=submit]:focus {
+    background-color: var(--darker-blue);
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+kbd {
+    color: var(--blue);
+    padding: 0rem 0.4rem;
+    border: 0.1rem solid var(--blue);
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+}

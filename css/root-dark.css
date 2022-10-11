@@ -1,0 +1,24 @@
+html[data-theme="dark"] {
+    --black : rgb(245, 242, 255);
+    --dark : #e0e0e7;
+    --light-dark : #c2c2c7;
+    --lighter-dark : #a2a2a7;
+    --hover : #1e232e;
+    --gray : #a2a2a7;
+    --blue : #0071e3;
+    --dark-blue :#006ad4;
+    --darker-blue : #0057ae;
+    --light-blue : #72b1ef;
+    /* --blue : #26c6da;
+    --dark-blue :#23b2c5;
+    --darker-blue : #20a5b7;
+    --light-blue : #8ce1eb;*/
+    --light : #3c424c;
+    --white : #11151e;
+    --background : #0e0e13;
+    --shadow : rgba(0, 0, 0, 0.3);
+    --light-shadow : rgba(0, 0, 0, 0.1);
+    --input-shadow : rgb(0 125 250 / 60%);
+    --disable : rgba(0, 0, 0, 0.5);
+    --trans-1 : 150ms;
+}
